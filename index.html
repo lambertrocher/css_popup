@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+  </head>
+  <body>
+
+  
+<div class="box">
+	<a class="button" href="#popup">Contactez nous</a>
+</div>
+
+<a href="#">
+	<div id="popup" class="overlay">
+			<div class="popup">
+				<div class="content">
+					<h2> Téléphonez-nous </h2>
+					00 00 00 00 00
+					<h2> Envoyez-nous un mail </h2>
+					yolo@live.fr
+				</div>
+
+		</div>
+	</div>
+</a>
+
+  </body>
+</html>
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+.overlay:target {
+  visibility: visible;	
+}
+
+.popup {
+  float: right;
+  margin: 10px;
+  padding: 20px;
+  background: black;
+  border-radius: 20px;
+  width: max-content;
+}
+
+.content {
+	color: white;
+	text-decoration: none;
+}
